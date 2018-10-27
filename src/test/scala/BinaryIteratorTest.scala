@@ -28,4 +28,10 @@ class BinaryIteratorTest extends org.scalatest.FunSuite {
     val iterator = new BinaryIterator(elements)
      assert(iterator.next === elements(1))
   }
+
+  test("BinaryIterator.nextGetSecondWhenElementsSizeIsFour") {
+    val elements = Array(2,5,6,7)
+    val iterator = new BinaryIterator(elements)
+     assert(iterator.next === elements(1))
+  }
 }

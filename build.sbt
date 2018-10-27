@@ -1,10 +1,5 @@
-lazy val root = (project in file(".")).
+lazy val katas = (project in file(".")).
   settings(
-    inThisBuild(List(
-      organization := "com.example",
-      scalaVersion := "2.12.7"
-    )),
-    name := "scalatest-example"
-  )
-
-libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.5" % Test
+    name := "scala-katas",
+    libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.5" % Test
+  ) 
